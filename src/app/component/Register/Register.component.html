@@ -1,0 +1,13 @@
+<div class="form">
+<div class="inp">
+  <label for="">Your Name</label>
+<input class="inpt" type="text" placeholder="name" [(ngModel)]="userName">
+<div class="error" *ngIf="!NameValid&&userName">{{errorName}}</div>
+</div>
+<div class="inp">
+  <label for="">Your age</label>
+<input class="inpt" type="number" placeholder="Age" [(ngModel)]="userAge">
+<div class="error" *ngIf="!ageValid&&userAge">{{errorAge}}</div>
+</div>
+<input type="button" value="Add" (click)="passData()">
+</div>
